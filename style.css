@@ -1,0 +1,343 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    /* border: 1px solid green; */
+    height: 57px;
+    width: 100%;
+    background-color: lightgreen;
+    position: fixed;
+    z-index: 100;
+}
+
+button {
+    border: none;
+    border-color: green;
+    background-color: darkkhaki;
+    margin-top: 13px;
+    margin-left: 7px;
+    font-size: 21px;
+    border-radius: 7px;
+    animation: 7s;
+}
+
+button:hover {
+    cursor: pointer;
+    color: red;
+    /* background: linear-gradient(to left top, yellow, orange); */
+    background-color: transparent;
+}
+
+body{
+    background-color: wheat;
+    color:black ;
+}
+.dark-mode{
+    background-color: black;
+    color: wheat;
+}
+.logo {
+    float: left;
+    color: green;
+    margin-top: 13px;
+    margin-left: 7px;
+    letter-spacing: 1px;
+    font-size: 21px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#banner {
+    /* border: 1px solid green; */
+    border-radius: 50%;
+    height: 70px;
+    width: 107px;
+    position: absolute;
+    margin:5.3% 0 0 43%;
+    animation: blink 7s infinite;
+
+}
+#banner span {
+    font-weight: 700;
+    font-size: 45px;
+    color: khaki;
+    position: absolute;
+    margin:7% 0 0 35%;
+ }
+@keyframes blink {
+    0% {
+        transform: scale(1);
+       background-color: khaki;
+    }
+    25% {
+        transform: scale(1.1);
+        background-color: green;
+     }
+    50% {
+        transform: scale(1);
+        background-color:  #d17b7b;
+    }
+    75% {
+        transform: scale(1.1);
+        background-color:  #775f77;
+     }
+    100% {
+        transform: scale(1);
+        background-color: orange;
+    }
+}
+.social {
+    float: right;
+    margin-top: 13px;
+}
+
+.social>a>img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+}
+
+ 
+
+#search {
+    height: 500px;
+    background-image: url("./foto/foods.jpg");
+    background-size: 100% 500px;
+    /* display: block; */
+}
+
+#coupons {
+    /* border: 1px solid green; */
+    background-image: url( "./foto/offer.jpg") ;
+    background-size: 100% 250px;
+    height: 350px;
+    width: 30%;
+    position: absolute;
+    margin: 13% 0 0 35%;
+    z-index: 100;
+    display: none;
+}
+.cut{
+    float: right;
+    height: 30px;
+    width: 30px;
+    margin: 1px 1px 0 0;    
+}
+.cut:hover{
+    cursor: pointer;  
+    background-color: transparent;  
+}
+ 
+
+.heading {
+    position: absolute;
+    margin-top: 17%;
+    margin-left: 25%;
+    font-size: 45px;
+    text-shadow: 0 0 3px red;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: white;
+}
+
+.dropdown {
+    /* border: 1px solid green; */
+    position: absolute;
+    margin-top: 21%;
+    margin-left: 30%;
+    height: 35px;
+    width: 700px;
+}
+
+select {
+    border: none;
+    appearance: none;
+    background-color: lightblue;
+    outline: none;
+}
+
+option {
+    text-align: center;
+    background-color: lightgreen;
+    color: green;
+}
+
+option:hover {
+    background-color: green;
+}
+
+select:focus option:checked {
+    background-color: violet;
+}
+
+#city {
+    font-size: 17px;
+    height: inherit;
+    width: 201px;
+    /* padding-left: 1.7%; */
+    text-shadow: 0 0 1px red;
+}
+
+#restaurent {
+    font-size: 17px;
+    height: inherit;
+    width: 270px;
+    margin-left: 3%;
+    /* padding-left: 3.2%; */
+    text-shadow: 0 0 1px red;
+}
+
+#QuickSearch {
+    /* background-color: lightblue;
+    display: inline-block; */
+    /* height: 300px; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.quickheading {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 3px red;
+    letter-spacing: 3px;
+    position: absolute;
+    display: inline-block;
+    margin: 21px 0 0 30px;
+}
+
+.quicksubheading {
+    font-size: 21px;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0 0 1px red;
+    letter-spacing: 1px;
+    position: absolute;
+    display: inline-block;
+    margin: 70px 0 0 30px;
+}
+
+.mainbox {
+    /* border: 1px solid green; */
+    /* height: 230px; */
+    width: 90%;
+    margin: auto;
+    margin-top: 9%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    /* border: 1px solid  ; */
+    box-shadow: 3px 5px 2px 2px gray;
+    height: 170px;
+    width: 25%;
+    display: flex;
+    border-radius: 7px;
+    margin: 1% 0 3% 6.3%;
+
+}
+
+.box1 {
+    /* border: 1px solid green; */
+    height: 170px;
+    width: 61%;
+}
+
+.box:hover {
+    /* border: 1px solid green; */
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.box1>img {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    height: inherit;
+    width: 100%;
+}
+
+img:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.box2 {
+    /* border: 1px solid green; */
+    height: 170px;
+    width: 39%;
+}
+
+.contentboxesheadings {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-shadow: 0 0 1px red;
+    text-align: center;
+    margin-top: 13%;
+}
+
+.contentboxessubheadings {
+    font-family: 'Courier New', Courier, monospace;
+    /* font-size: 18px; */
+    text-shadow: 0 0 1px red;
+    text-align: center;
+    margin-top: 13%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #64e964;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul>li>a {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    line-height: 1.7;
+    text-decoration: none;
+    color: green;
+}
+
+ul>li>:hover {
+    cursor: pointer;
+    text-shadow: 0 0 1px red;
+}
+
+.footercontainer {
+    border-right: 1px solid green;
+    display: flex;
+    height: 100px;
+    width: 20%;
+    margin: 1.7% 0 0 9%;
+    justify-content: center;
+    align-items: center;
+}
+
+.foottext {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 21px;
+    text-shadow: 0 0 1px red;
+    flex-basis: 100%;
+    background-color: green;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+    letter-spacing: 3px;
+    align-items: center;
+
+}
+
+.noborder {
+    border: none;
+}

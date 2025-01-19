@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food_ordering_ui</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./style.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h3>New learner</h3>
+        </div>
+        <button>Home</button>
+        <button class="bulb" onclick="changemode()">💡</button>
+        <div class="social">
+            <a href=""><img src="./foto/download (1).png" alt=""></a>
+            <a href=""><img src="./foto/download.jpg" alt=""></a>
+            <a href=""><img src="./foto/download.png" alt=""></a>
+        </div>
+    </header>
+    <section>
+        <div id="coupons">
+            <button class="cut" onclick="closecoupons()">&times;</button>
+        </div>
+        <div id="search">
+            <div id="banner"><span>D!</span></div>
+            <div class="heading">Find your Best food Here !</div>
+            <div class="dropdown">
+                <select name="" id="city" onchange="getrest()">
+                    <option value="" disabled selected>- - - - - select city - - - - -</option>
+                </select>
+                <select name="" id="restaurent">
+                    <option value="" disabled selected>- - - - - select restaurent - - - - -</option>
+                </select>
+            </div>
+        </div>
+    </section>
+    <section id="QuickSearch">
+        <span class="quickheading">Quick Search</span>
+        <span class="quicksubheading"> Find Restaurent By MealTypes !</span>
+
+        <div class="mainbox">
+            <div class="box">
+                <div class="box1">
+                    <img src="./foto/samoshachart.jpg" alt="samoshachart">
+                </div>
+                <div class="box2">
+                    <div class="contentboxesheadings">Breakfast</div>
+                    <div class="contentboxessubheadings">Best deal for the day 50% off</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img src="./foto/lunch.webp" alt="lunch">
+                </div>
+                <div class="box2">
+                    <div class="contentboxesheadings">Lunch</div>
+                    <div class="contentboxessubheadings">Best deal for the day 50% off</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img src="./foto/dinner.jpg" alt="dinner">
+                </div>
+                <div class="box2">
+                    <div class="contentboxesheadings">Dinner</div>
+                    <div class="contentboxessubheadings">Best deal for the day 50% off</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img src="./foto/non-veg.png" alt="non-veg">
+                </div>
+                <div class="box2">
+                    <div class="contentboxesheadings">Non-Veg</div>
+                    <div class="contentboxessubheadings">Best deal for the day 50% off</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img src="./foto/drinks.jpg" alt="drinks">
+                </div>
+                <div class="box2">
+                    <div class="contentboxesheadings">Drinks</div>
+                    <div class="contentboxessubheadings">Best deal for the day 50% off</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img src="./foto/veg-thali.png" alt="veg-thali">
+                </div>
+                <div class="box2">
+                    <div class="contentboxesheadings">Veg-Thali</div>
+                    <div class="contentboxessubheadings">Best deal for the day 50% off</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img src="./foto/bar dance.jpg" alt="dance">
+                </div>
+                <div class="box2">
+                    <div class="contentboxesheadings">Dance</div>
+                    <div class="contentboxessubheadings">Best deal for the day 50% off</div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box1">
+                    <img src="./foto/zim centre.jpg" alt="samoshachart">
+                </div>
+                <div class="box2">
+                    <div class="contentboxesheadings">Zim Centre</div>
+                    <div class="contentboxessubheadings">Best deal for the year 50% off</div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <footer>
+        <div class="footercontainer">
+            <ul>
+                <li><a href="">Your Orders</a></li>
+                <li><a href="">Bike on Rent</a></li>
+            </ul>
+        </div>
+        <div class="footercontainer">
+            <ul>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">Reviews</a></li>
+            </ul>
+        </div>
+        <div class="footercontainer noborder">
+            <ul>
+                <li><a href="">work here</a></li>
+                <li><a href="">Invest here!</a></li>
+            </ul>
+        </div>
+
+        <div class="foottext">| &copy;new learner 2024|</div>
+    </footer>
+
+
+</body>
+<script>
+    window.onload = showcoupons();
+    window.onload = changemode();
+    window.onload = getcity();
+</script>
+
+</html>
